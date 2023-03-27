@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Peddana&display=swap");
+
+body {
+  /* background-image: linear-gradient(
+    to left,
+    #625fe9,
+    #0086f8,
+    #00a1ee,
+    #00b5d9,
+    #62c5c7
+  ); */
+}
+
+.btn {
+  padding-bottom: 0 !important;
+  font-weight: 600;
+}
+
+.bth:hover {
+  opacity: 0.9;
+  color: #fff !important;
+}
+
+* {
+  /* color: #fff; */
+  font-family: "Peddana", serif;
+  letter-spacing: 1px;
+  font-weight: 600 !important;
+  font-size: large;
+}
+
+.signup-con {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+}
+
+.card {
+  background: #e9ebec;
+}
+
+.share {
+  width: 140px !important;
+  margin: 0 auto;
+}

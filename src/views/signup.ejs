@@ -1,0 +1,92 @@
+<%- include("./shared/header")%>
+<body>
+  <div class="container signup-con">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-4">
+        <div class="card rounded-0 border-0 p-4 text-center">
+          <form action="/auth/signup" method="post">
+            <div class="my-2">
+              <h2 class="text-success mb-4">Join Us Now.</h2>
+            </div>
+
+            <div class="form-group my-2">
+              <input
+                value="<%=oldData?.userName%>"
+                class="form-control mb-2 rounded-0"
+                type="text"
+                name="userName"
+                placeholder="Username"
+                required
+              />
+              <%if(validationErr?.includes('userName')){%>
+              <div class="alert border border-success text-center my-2">
+                <p class="mb-0">Please Enter Valid Username</p>
+              </div>
+              <%}%>
+            </div>
+            <div class="form-group my-2">
+              <input
+                value="<%=oldData?.email%>"
+                class="form-control mb-2 rounded-0"
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+              <%if(emailErr){%>
+              <div class="alert my-2 border border-success text-center my-2">
+                <p class="mb-0"><%=emailErr%></p>
+              </div>
+              <%}%> <%if(validationErr?.includes('email')){%>
+              <div class="alert border border-success text-center my-2">
+                <p class="mb-0">Please Enter Valid Email</p>
+              </div>
+              <%}%>
+            </div>
+            <div class="form-group my-2">
+              <input
+                value="<%=oldData?.password%>"
+                class="form-control mb-2 rounded-0"
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
+              <%if(validationErr?.includes('password')){%>
+              <div class="alert border border-success text-center my-2">
+                <p class="mb-0">Please Enter Valid Password</p>
+              </div>
+              <%}%>
+            </div>
+            <div class="form-group my-2">
+              <input
+                value="<%=oldData?.cPassword%>"
+                class="form-control mb-2 rounded-0"
+                type="password"
+                name="cPassword"
+                placeholder="Confirmation Password"
+                required
+              />
+              <%if(validationErr?.includes('cPassword')){%>
+              <div class="alert border border-success text-center my-2">
+                <p class="mb-0">Confirmation Password Mismatch</p>
+              </div>
+              <%}%>
+            </div>
+            <div class="form-group my-2">
+              <button class="btn btn-success w-100 mb-4 rounded-0">
+                Sign Up
+              </button>
+              <p class="my-1">
+                Already Have Account? <a href="/auth/login">Login</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%- include("./shared/script")%>
+  <script src="./shared/js/signup.js"></script>
+</body>
