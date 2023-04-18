@@ -1,18 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Peddana&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 
 body {
-  /* background-image: linear-gradient(
-    to left,
-    #625fe9,
-    #0086f8,
-    #00a1ee,
-    #00b5d9,
-    #62c5c7
-  ); */
+  /* background: #54b0a3; */
 }
 
 .btn {
-  padding-bottom: 0 !important;
+  padding: 3px !important;
   font-weight: 600;
 }
 
@@ -22,11 +15,10 @@ body {
 }
 
 * {
-  /* color: #fff; */
-  font-family: "Peddana", serif;
-  letter-spacing: 1px;
+  font-family: 'Bellefair', serif;
+      letter-spacing: 1px;
   font-weight: 600 !important;
-  font-size: large;
+  /* font-size: large; */
 }
 
 .signup-con {
@@ -40,6 +32,7 @@ body {
 }
 
 .share {
-  width: 140px !important;
+  width: 130px !important;
+  border-radius: 15px !important;
   margin: 0 auto;
 }

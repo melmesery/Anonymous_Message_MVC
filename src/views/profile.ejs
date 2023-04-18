@@ -11,13 +11,13 @@
 
     <div class="row align-items-center justify-content-center">
       <div class="col-md-6">
-        <div class="card p-5 my-5 text-center rounded-5 border-0">
+        <div class="card p-5 my-5 text-center rounded-5 ">
           <img src="<%=user?.profilePic%>" alt="" class="w-25 mx-auto mb-3" />
           <h1 class="fw-bold"><%=user?.userName%></h1>
           <a
             href="<%=user?.shareLink%>"
             target="_blank"
-            class="btn btn-primary share mt-3 rounded-0"
+            class="btn btn-light share mt-3 rounded-0"
             >Share Profile</a
           >
         </div>
@@ -41,7 +41,7 @@
       </div> -->
     </div>
 
-    <div class="card p-5 my-5 rounded-5 border-0">
+    <div class="card p-5 my-5 rounded-0 ">
       <h2 class="fw-bold">Your Messages</h2>
       <div
         class="row justify-content-center align-items-center my-2"
@@ -50,7 +50,7 @@
         <div class="col-md-8 p-2">
           <div class="card bg-light rounded-0 p-2">
             <div class="d-flex align-items-end justify-content-between gap-5">
-              <p class="mb-0 fs-4"><%=messages[i].message%></p>
+              <p class="mb-0 fs-5"><%=messages[i].message%></p>
               <a
                 href="/message/<%=messages[i]._id%>/delete"
                 class="btn btn-danger rounded-0"
